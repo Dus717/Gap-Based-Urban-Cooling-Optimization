@@ -1,7 +1,3 @@
-# Gap-Based-Urban-Cooling-Optimization
-
----
-
 # 基于缺口理论的城市冷却设施多目标优化 (Gap-Based Urban Cooling Optimization)
 
 该项目提供了一个基于 Python 的多目标空间优化框架，旨在解决城市冷却基础设施（喷淋设施和饮水台）的选址分配问题。
