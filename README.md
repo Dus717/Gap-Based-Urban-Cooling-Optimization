@@ -1,5 +1,17 @@
 # 基于缺口理论的城市冷却设施多目标优化 (Gap-Based Urban Cooling Optimization)
 
+## 🛠️ 工具链 (Toolchain)
+
+本项目属于城市冷却服务优化框架的一部分，完整的工作流包含以下组件：
+
+1.  **数据获取 (Data Acquisition):**
+    * 针对原始数据中缺失坐标的避难所与冷却中心，使用 [Google-map-coordinate-scraper](https://github.com/Dus717/Google-map-coordinate-scraper) 进行自动化地理编码。
+2.  **基准评估 (Baseline Assessment):**
+    * 使用 [2SFCA-in-R](https://github.com/Strossi/2SFCA-in-R) 计算各社区的初始可达性缺口 (`Total_Acce`)。
+3.  **核心优化 (Core Optimization):**
+    * 即本项目 (`Gap-Based-Urban-Cooling-Optimization`)，基于上述数据执行 NSGA-II 算法。
+
+    * 
 该项目提供了一个基于 Python 的多目标空间优化框架，旨在解决城市冷却基础设施（喷淋设施和饮水台）的选址分配问题。
 
 该脚本利用 **NSGA-II (非支配排序遗传算法)**，在严格的预算约束下，平衡两个核心目标：**效率（降低服务压力）与公平（优先填补高危区域的服务缺口）**。
