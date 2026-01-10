@@ -30,7 +30,7 @@ pip install pandas numpy pymoo
 
 ## 📂 数据准备
 
-脚本默认读取路径为：`E:\Benchmark-Dataset-For-Building\data\(最终)Research_Data_Final_Strict.csv`
+自行确定脚本默认读取路径。
 
 **输入 CSV 文件必须包含以下列：**
 
@@ -55,7 +55,7 @@ pip install pandas numpy pymoo
 
 | 变量名 | 值 | 说明 |
 | --- | --- | --- |
-| `WEIGHT_SPRAY` | **2.7** | 喷淋设施的效能权重 (当前设为降低 10% 后的值，基准通常为 3.0) |
+| `WEIGHT_SPRAY` | **3.0** | 喷淋设施的效能权重 (当前设为降低 10% 后的值，基准通常为 3.0) |
 | `WEIGHT_DRINK` | **1.0** | 饮水台的基准效能权重 |
 | `WEIGHT_COOLING` | **5.0** | 冷却中心的效能权重 (用于计算现有背景服务水平) |
 
@@ -88,7 +88,7 @@ python your_script_name.py
 
 优化完成后，结果将保存为 CSV 文件：
 
-* **路径:** `E:\Benchmark-Dataset-For-Building\data\(Spray-10%)Optimization_Pareto_Results.csv`
+* 自行确定保存路径。
 
 **输出文件包含以下列：**
 
@@ -100,6 +100,6 @@ python your_script_name.py
 
 ## ⚠️ 注意事项
 
-1. **敏感性分析:** 当前代码的 `WEIGHT_SPRAY` 设置为 **2.7**。如果您是在做基准测试或 +10% 测试，请务必手动修改此值（例如修改为 3.0 或 3.3）并更改输出文件名。
+1. **敏感性分析:** 当前代码的 `WEIGHT_SPRAY` 设置为 **3.0**。如果您是在做 -10% 测试或 +10% 测试，请务必手动修改此值（例如修改为 2.7 或 3.3）并更改输出文件名。
 2. **路径兼容性:** 代码包含简单的路径兼容逻辑，但建议确保数据文件位于指定目录，或修改 `file_path` 变量。
 3. **结果随机性:** 由于使用了遗传算法（随机种子 `seed=42`），在相同参数下每次运行结果应一致。如需测试算法稳定性，可更改随机种子。
