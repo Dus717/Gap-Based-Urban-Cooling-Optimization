@@ -75,9 +75,12 @@
 
 1.  **数据获取 (Data Acquisition):**
     * 针对原始数据中缺失坐标的避难所与冷却中心，使用 [Google-map-coordinate-scraper](https://github.com/Dus717/Google-map-coordinate-scraper) 进行自动化地理编码。
-2.  **基准评估 (Baseline Assessment):**
-    * 使用 [2SFCA-in-R](https://github.com/Strossi/2SFCA-in-R) 计算各社区的初始可达性缺口 (`Total_Acce`)。
-3.  **核心优化 (Core Optimization):**
+2.  **基准评估(Baseline Assessment):**
+    * 使用Arcgispro计算出各社区的现状综合可达性(`Total_Acce`)。
+3.  **待优化数据处理:**
+    * 在arcgispro中导出现状综合可达性地图的属性表文件(.csv)后，使用以下代码进行数据预处理。
+    * Quick Start:data_cleaning.py
+4.  **核心优化 (Core Optimization):**
     * 即本项目 (`Gap-Based-Urban-Cooling-Optimization`)，基于上述数据执行 NSGA-II 算法。
 
 ---
