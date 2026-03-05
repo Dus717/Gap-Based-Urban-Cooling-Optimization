@@ -79,7 +79,7 @@
     * 使用Arcgispro计算出各社区的现状综合可达性(`Total_Acce`)。
 3.  **待优化数据处理:**
     * 在arcgispro中导出现状综合可达性地图的属性表文件(.csv)后，使用以下代码进行数据预处理。
-    * Quick Start:https://github.com/Dus717/Gap-Based-Urban-Cooling-Optimization/data_cleaning.py
+    * Quick Start:[https://github.com/Dus717/Gap-Based-Urban-Cooling-Optimization/data_cleaning.py](https://github.com/Dus717/Gap-Based-Urban-Cooling-Optimization/blob/main/data_cleaning.py)
 4.  **核心优化 (Core Optimization):**
     * 即本项目 (`Gap-Based-Urban-Cooling-Optimization`)，基于上述数据执行 NSGA-II 算法。
 
