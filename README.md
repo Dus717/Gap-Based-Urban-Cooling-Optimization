@@ -74,12 +74,12 @@
 本项目属于城市冷却服务优化框架的一部分，完整的工作流包含以下组件：
 
 1.  **数据获取 (Data Acquisition):**
-    * 针对原始数据中缺失坐标的避难所与冷却中心，使用 [Google-map-coordinate-scraper](https://github.com/Dus717/Google-map-coordinate-scraper) 或者https://github.com/Dus717/Gap-Based-Urban-Cooling-Optimization.git/Site-Scraper.py进行自动化爬取。
+    * 针对原始数据中缺失坐标的避难所与冷却中心，使用 [Google-map-coordinate-scraper](https://github.com/Dus717/Google-map-coordinate-scraper) 或者https://github.com/Dus717/Gap-Based-Urban-Cooling-Optimization/Site-Scraper.py进行自动化爬取。
 2.  **基准评估(Baseline Assessment):**
     * 使用Arcgispro计算出各社区的现状综合可达性(`Total_Acce`)。
 3.  **待优化数据处理:**
     * 在arcgispro中导出现状综合可达性地图的属性表文件(.csv)后，使用以下代码进行数据预处理。
-    * Quick Start:https://github.com/Dus717/Gap-Based-Urban-Cooling-Optimization.git/data_cleaning.py
+    * Quick Start:https://github.com/Dus717/Gap-Based-Urban-Cooling-Optimization/data_cleaning.py
 4.  **核心优化 (Core Optimization):**
     * 即本项目 (`Gap-Based-Urban-Cooling-Optimization`)，基于上述数据执行 NSGA-II 算法。
 
